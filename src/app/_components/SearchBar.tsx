@@ -51,10 +51,10 @@ export default function SearchBar() {
         onChange={(e) => setSearch(e.target.value)}
         type="text"
         placeholder="Type here..."
-        className="border-black border-2 border-r-0 py-1 px-2  rounded-l-md placeholder:text-xl  text-xl outline-none focus:shadow-md transition-all w-[80%]"
+        className="border-black border-2 border-r-0 py-1 px-2  rounded-l-md placeholder:text-xl  text-xl outline-none focus:shadow-md transition-all w-[100%] "
       />
       <button
-        className=" bg-yellow-500 p-1 sm:px-3 border-2 border-black  font-bold rounded-r-md"
+        className=" bg-yellow-500  sm:px-3 border-2 border-black  font-bold rounded-r-md"
         onClick={handleClick}
       >
         <p className="hidden text-xl sm:block">Search</p>
