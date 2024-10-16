@@ -18,7 +18,7 @@ export default function NavBarMobile() {
         {!showNavBar && (
           <LuMenu
             onClick={handleShowNavBar}
-            className="text-2xl transition-all"
+            className="text-2xl transition-all sm:hidden"
           />
         )}
         <div
