@@ -33,7 +33,7 @@ export default function NavBarMobile() {
           />
 
           <div className="w-5/6 h-[80%] rounded-2xl items-center flex justify-start flex-col relative shadow-md border-2 border-gray-400 py-[10%] ">
-            <div className="w-[80%] mb-[10%] mx-auto ">
+            <div className="w-[100%] ">
               <SearchBar />
             </div>
             <ul className="flex flex-col">
