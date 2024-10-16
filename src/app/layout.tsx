@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Lato } from "next/font/google";
+import Header from "@/app/_components/Header";
+import Logo from "@/app/_components/Logo";
 
 export const metadata = {
   title: {
@@ -23,7 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lato.className}>{children}</body>
+      <body className={lato.className}>
+        <Header>
+          <Logo />
+        </Header>
+
+        {children}
+      </body>
     </html>
   );
 }

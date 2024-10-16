@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
+        mainYellow: "#ffe943",
       },
     },
   },
