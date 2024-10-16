@@ -1,4 +1,4 @@
-export default function Header({ children }) {
+export default function Header({ children }: any) {
   return (
     <header className="shadow-md p-3 flex items-center justify-between relative h-14 sm:h-auto">
       {children}
