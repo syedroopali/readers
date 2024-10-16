@@ -14,9 +14,7 @@ export default function Logo() {
           placeholder="blur"
           className="w-8 sm:w-9 md:w-10"
         />
-        <h1 className="capitalize text-2xl md:text-3xl font-black hidden sm:block">
-          readers-one
-        </h1>
+        <h1 className="capitalize text-2xl md:text-3xl ">readers-one</h1>
       </div>
     </Link>
   );

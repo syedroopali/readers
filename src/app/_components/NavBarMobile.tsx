@@ -5,6 +5,7 @@ import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 import { FiSearch } from "react-icons/fi";
 import Link from "next/link";
+import SearchBar from "./SearchBar";
 
 export default function NavBarMobile() {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -31,21 +32,15 @@ export default function NavBarMobile() {
             className="text-2xl absolute top-4 right-3"
           />
 
-          <div className="w-5/6 h-[80%] rounded-2xl items-center flex justify-center flex-col relative shadow-2outline bg-slate-50 ">
-            <div className="flex items-center justify-center flex-col gap-2 relative mb-20">
-              <input
-                type="text"
-                className="text-xl p-3 rounded-md border-black border-2 w-[90%] "
-              />
-              <button className="flex items-cente justify-center w-[90%] p-2 border-blue-100 border-2 rounded-md">
-                <p className="text-xl font-bold">Search</p>
-              </button>
+          <div className="w-5/6 h-[80%] rounded-2xl items-center flex justify-start flex-col relative shadow-md border-2 border-gray-400 py-[10%] ">
+            <div className="w-[80%] mb-[10%] ">
+              <SearchBar />
             </div>
             <ul className="flex flex-col">
               <li className="w-full">
                 <Link
                   href="/"
-                  className="inline-block py-4 w-full text-center text-2xl hover:bg-yellow-100 font-bold text-gray-700 border-b-2 border-t-2 border-b-gray-300 transition-all"
+                  className="inline-block py-4 w-full text-center text-xl hover:bg-gray-100 font-bold text-gray-700 border-b-2 border-t-2 border-b-gray-300 transition-all"
                 >
                   Home
                 </Link>
@@ -53,7 +48,7 @@ export default function NavBarMobile() {
               <li className="w-full">
                 <Link
                   href="/"
-                  className="inline-block py-4 w-full text-center text-2xl hover:bg-yellow-100 font-bold text-gray-700 border-b-2  border-b-gray-300  transition-all"
+                  className="inline-block py-4 w-full text-center text-xl hover:bg-gray-100 font-bold text-gray-700 border-b-2  border-b-gray-300  transition-all"
                 >
                   About Us
                 </Link>
@@ -62,7 +57,7 @@ export default function NavBarMobile() {
               <li className="w-full">
                 <Link
                   href="/"
-                  className="inline-block py-4 w-full text-center text-2xl hover:bg-yellow-100 font-bold text-gray-700 border-b-2  border-b-gray-300  transition-all"
+                  className="inline-block py-4 w-full text-center text-xl hover:bg-gray-100 font-bold text-gray-700 border-b-2  border-b-gray-300  transition-all"
                 >
                   Contact Us
                 </Link>
