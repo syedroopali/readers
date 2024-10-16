@@ -8,10 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "1outline":
+          "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
+        "2outline":
+          "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
+      },
+
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        mainYellow: "#ffe943",
+        mainYellow: "#ffd900df",
       },
     },
   },
