@@ -1,9 +1,6 @@
 import "./globals.css";
 import { Lato } from "next/font/google";
 import Header from "@/app/_components/Header";
-import Logo from "@/app/_components/Logo";
-import NavBarMobile from "@/app/_components/NavBarMobile";
-import SearchBar from "./_components/SearchBar";
 
 export const metadata = {
   title: {
@@ -28,15 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className}>
-        <Header>
-          <Logo />
-          <NavBarMobile />
-          <div className="hidden sm:block w-[60%]">
-            <SearchBar />
-          </div>
-        </Header>
-
-        {children}
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );
