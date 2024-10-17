@@ -37,7 +37,7 @@ export default function BlogPosts() {
 
   return (
     <div className="max-w-7xl border-[1px] border-gray-500 m-auto ">
-      <div className="grid grid-cols-2 items justify-items-center  gap-3 p-2">
+      <div className="grid grid-cols-2 items justify-items-center  gap-3 p-3">
         {/* ///////////////////////////////////////////////////////////////// */}
 
         {postData.map((post) => (
