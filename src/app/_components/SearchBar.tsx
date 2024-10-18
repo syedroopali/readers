@@ -3,39 +3,39 @@
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 
-const data = [
+const dataObj = [
   {
     title: "Abc",
-    description: "My name is abc",
+    body: "My name is abc",
     id: 1,
   },
   {
     title: "2abc",
-    description: "My name is abc",
+    body: "My name is abc",
     id: 1,
   },
   {
     title: "Xyz",
-    description: "my name is xyz",
+    body: "my name is xyz",
     id: 2,
   },
   {
     title: "Blog",
-    description: "hy this is am blog",
+    body: "hy this is am blog",
     id: 1,
   },
   {
     title: "blog",
-    description: "hy i am 2ndblog",
+    body: "hy i am 2ndblog",
     id: 1,
   },
 ];
 
-export default function SearchBar() {
+export default function SearchBar({ postData }: any) {
   const [search, setSearch] = useState("");
 
-  const searchResult = data.filter((obj) =>
-    `${obj.title.toLowerCase()} ${obj.description.toLowerCase()}`
+  const searchResult = postData.filter((obj: any) =>
+    `${obj.title.toLowerCase()} ${obj.body.toLowerCase()}`
       .split(" ")
       .includes(search)
   );

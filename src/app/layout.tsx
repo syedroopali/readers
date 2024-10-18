@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Lato } from "next/font/google";
 import Header from "@/app/_components/Header";
-
 export const metadata = {
   title: {
     template: "%s | Readers-One",
@@ -24,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={`${lato.className} bg-gray-50`}>
         <Header />
-        <main>{children}</main>
+        <main className="mt-20">{children}</main>
       </body>
     </html>
   );

@@ -9,15 +9,15 @@ import {
 export default function Card({ postData }: any) {
   return (
     <>
-      <div className=" max-w-48 border-[2px] shadow-sm hover:shadow-md transition-all border-yellow-500 px-2 py-2 rounded">
-        <h1 className="text-lg font-bold mb-1 leading-tight h-12 overflow-hidden tracking-tight text-orange-700">
+      <div className=" max-w-48 md:max-w-[14rem] border-[2px] shadow-sm hover:shadow-md transition-all border-yellow-500 px-2 py-2 rounded">
+        <h1 className="text-lg md:text-xl font-bold mb-1 leading-tight md:leading-none h-12 md:h-16 overflow-hidden tracking-tight text-orange-700">
           {postData.title}
         </h1>
-        <p className="text-sm leading-none text-gray-600 text-justify tracking-tighter h-[5.2rem] overflow-hidden">
+        <p className="text-sm md:text-base leading-none md:leading-none text-gray-600 text-justify tracking-tighter h-[5.2rem] overflow-hidden">
           {postData.body}
         </p>
         <Link
-          href="/"
+          href={`/blog-post/${postData.id}`}
           className="text-sm mb-1 text-gray-600 inline-block hover:text-gray-950 transition-all"
         >
           read more..
