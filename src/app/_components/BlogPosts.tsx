@@ -7,7 +7,9 @@ export default function BlogPostCards({ posts }: any) {
   const { setSearch, searchData, setSearchData, search }: any = useSearch();
 
   const handleClear = function () {
+    console.log(searchData);
     setSearchData(null);
+    console.log(searchData);
     setSearch("");
   };
 

@@ -4,7 +4,7 @@ import { FiSearch } from "react-icons/fi";
 import { useSearch } from "../_contexts/SearchContext";
 
 export default function SearchBar({ postData }: any) {
-  const { search, setSearch, setSearchData }: any = useSearch();
+  const { search, setSearch, setSearchData, searchData }: any = useSearch();
 
   const searchResult = postData.filter((obj: any) =>
     `${obj.title.toLowerCase()} ${obj.body.toLowerCase()}`
@@ -13,7 +13,12 @@ export default function SearchBar({ postData }: any) {
   );
 
   const handleClick = function () {
-    if (searchResult.length) setSearchData(searchResult);
+    if (searchResult.length) {
+      console.log(searchData);
+      setSearchData(searchResult);
+      console.log(searchData);
+    }
+    // setSearchData((search: string[]): string[] => [...search, searchResult]);
   };
 
   const handleSubmit = function (e: any) {
