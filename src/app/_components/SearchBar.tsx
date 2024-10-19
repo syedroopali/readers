@@ -9,7 +9,7 @@ export default function SearchBar({ postData }: any) {
   const searchResult: string[] = postData.filter((obj: any) =>
     `${obj.title.toLowerCase()} ${obj.body.toLowerCase()}`
       .split(" ")
-      .includes(search)
+      .includes(String(search).trim().toLowerCase())
   );
 
   const handleSubmit = function (e: any) {
