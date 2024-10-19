@@ -6,7 +6,7 @@ const SearchContext = createContext({});
 
 const SearchProvider = function ({ children }: any) {
   const [search, setSearch] = useState([]);
-  const [searchData, setSearchData] = useState(null);
+  const [searchData, setSearchData] = useState([]);
 
   return (
     <SearchContext.Provider
