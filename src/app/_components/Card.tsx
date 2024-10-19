@@ -9,7 +9,7 @@ import {
 export default function Card({ postData }: any) {
   return (
     <>
-      <div className=" max-w-48 md:max-w-[14rem] border-[2px] shadow-sm hover:shadow-md transition-all border-yellow-500 px-2 py-2 rounded">
+      <div className=" max-w-48 md:max-w-[14rem] border-[2px] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all border-yellow-500 px-2 py-2 rounded">
         <h1 className="text-lg md:text-xl font-bold mb-1 leading-tight md:leading-none h-12 md:h-16 overflow-hidden tracking-tight text-orange-700">
           {postData.title}
         </h1>
