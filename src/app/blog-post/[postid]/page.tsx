@@ -1,6 +1,6 @@
 import { PostById } from "@/app/_lib/PostData";
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }: any) {
   const { title } = await PostById(params.postid);
   if (!title) return { title: "Page not Found" };
   const metaTitle =

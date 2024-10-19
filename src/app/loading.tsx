@@ -3,7 +3,7 @@ export default function Loading() {
     <>
       <div
         role="status"
-        className="w-full h-screen flex items-center justify-center"
+        className="w-full h-[85vh] flex items-center justify-center"
       >
         <div className="flex flex-col gap-1 items-center justify-center">
           <svg

@@ -1,9 +1,8 @@
 "use client";
+import NavBarLinks from "@/app/_components/NavBarLinks";
 import { useState } from "react";
 import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
-import NavBarLinks from "@/app/_components/NavBarLinks";
-import SearchBar from "@/app/_components/SearchBar";
 
 export default function NavBarMobile({ postData }: any) {
   const navBarlinks = [
@@ -49,12 +48,8 @@ export default function NavBarMobile({ postData }: any) {
             className="text-2xl absolute top-4 right-3"
           />
 
-          <div className="w-5/6 h-[80%] rounded-2xl items-center flex justify-start flex-col relative shadow-md border-2 border-gray-400 py-[10%] bg-white">
-            <div className="w-[80%] mb-16">
-              <SearchBar postData={postData} />
-            </div>
-
-            <ul className="text-xl font-bold text-gray-700">
+          <div className="w-5/6 h-[80%] rounded-2xl items-center flex justify-center flex-col relative shadow-md border-2 border-gray-400 py-[10%] bg-white">
+            <ul className="text-xl font-bold text-gray-700 first:border-t-2">
               {navBarlinks.map((link) => (
                 <NavBarLinks
                   text={link.text}
