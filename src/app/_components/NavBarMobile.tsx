@@ -4,7 +4,7 @@ import { useState } from "react";
 import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 
-export default function NavBarMobile({ postData }: any) {
+export default function NavBarMobile() {
   const navBarlinks = [
     {
       text: "Home",
